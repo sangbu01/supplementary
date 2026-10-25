@@ -147,10 +147,18 @@ Details are in `second_model_gate_failure.md`.
 
 ## Licence and citation
 
-The authors intend to release the **code under the MIT Licence** and the
-**data and instruction strings under CC BY 4.0**; the corresponding `LICENSE`
-files will be added in a follow-up commit. The LIBERO-Safety benchmark, its
-assets and the π0.5 checkpoint remain under their original licences.
+- **Code** (`analysis/*.py`, the evaluation and figure scripts): **MIT Licence** —
+  see [`LICENSE`](LICENSE).
+- **Data and instruction strings** (`instructions_*.csv/json`,
+  `v5_review_sheet.csv`, `per_cell_ledger.csv`, `round5_out.txt`,
+  `table_S1_frame_only_content.csv`, `second_model_gate_failure.md`,
+  `review_sheets/`, `round6_results/`, and the tables and figures derived from
+  them): **CC BY 4.0** — see [`LICENSE-data`](LICENSE-data).
+- **Third-party material** (the LIBERO-Safety benchmark, its BDDL files and
+  assets, the π0.5 checkpoint and the π0 weights): original upstream licences;
+  not redistributed here.
+
+If you use these data or code, please cite the paper (below).
 
 ```bibtex
 @inproceedings{sang2026frameeffects,
@@ -179,3 +187,5 @@ assets and the π0.5 checkpoint remain under their original licences.
 基准本体（LIBERO-Safety、10 GB assets）与 π0.5 权重不在本目录，按上游许可获取。
 Round A–C 的逐步动作日志约 64 MB，台账已足够复现除接触回放外的全部数字；
 需要动作日志可向通讯作者索取。
+
+许可：代码为 MIT（`LICENSE`），数据与指令串为 CC BY 4.0（`LICENSE-data`）。

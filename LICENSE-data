@@ -1,0 +1,52 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Jiacun Sang and Wen Liu
+
+This licence applies to the data and instruction strings in this repository:
+
+  - instructions_163.csv
+  - instructions_v5.json
+  - v5_review_sheet.csv
+  - v5_复核结果与处置.md
+  - per_cell_ledger.csv
+  - round5_out.txt
+  - table_S1_frame_only_content.csv
+  - second_model_gate_failure.md
+  - review_sheets/
+  - round6_results/ (the JSONL episode logs and their analysis text)
+  - the tables and figures in the paper that are derived from them
+
+You are free to:
+
+  Share — copy and redistribute the material in any medium or format.
+  Adapt — remix, transform, and build upon the material for any purpose,
+  even commercially.
+
+Under the following terms:
+
+  Attribution — You must give appropriate credit, provide a link to the
+  licence, and indicate if changes were made. You may do so in any reasonable
+  manner, but not in any way that suggests the licensor endorses you or your
+  use.
+
+  No additional restrictions — You may not apply legal terms or technological
+  measures that legally restrict others from doing anything the licence
+  permits.
+
+Full legal code (authoritative):
+  https://creativecommons.org/licenses/by/4.0/legalcode
+
+Human-readable summary:
+  https://creativecommons.org/licenses/by/4.0/
+
+Suggested attribution:
+
+  Sang, Jiacun, and Wen Liu. "Task- and Language-Pair-Scoped Frame Effects in
+  π0.5: A Reproducible Two-Bowl Delivery Failure and a Safety Predicate That
+  Cannot Fire." IEEE AIHCIR 2026, Session 10. Data and instruction strings,
+  CC BY 4.0. https://github.com/sangbu01/supplementary
+
+Scope note: the LIBERO-Safety benchmark, its BDDL files and assets, the π0.5
+checkpoint, and the π0 weights are not covered by this licence and remain under
+their original upstream licences. They are not redistributed in this
+repository.
