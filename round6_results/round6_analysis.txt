@@ -1,0 +1,34 @@
+Round 6 analysis -- 180 ok episodes
+source: /work/results_round6
+
+conditions present: cs_en_noun_es, cs_en_noun_zh, cs_es_noun_en, en, es, zh
+
+A. Success by condition (this batch only)
+  condition                 k/n    rate  files
+  cs_en_noun_es           19/30   63.3%  human_safety_20261025-064759.jsonl
+  cs_en_noun_zh           23/30   76.7%  human_safety_20261025-061653.jsonl,human_safety_20261025-062021.jsonl
+  cs_es_noun_en           27/30   90.0%  human_safety_20261025-064759.jsonl
+  en                      26/30   86.7%  human_safety_20261025-061653.jsonl,human_safety_20261025-062021.jsonl
+  es                      17/30   56.7%  human_safety_20261025-064759.jsonl
+  zh                      14/30   46.7%  human_safety_20261025-062021.jsonl
+
+B. Paired cell-level contrasts (15 soda cells; RD = left - right)
+  en                 vs cs_en_noun_zh      RD= +10.0 pp  p=0.50000  cells=15 W/T/L=3/11/1  (26/30 vs 23/30)
+  zh                 vs cs_en_noun_zh      RD= -30.0 pp  p=0.06250  cells=15 W/T/L=2/5/8  (14/30 vs 23/30)
+  en                 vs zh                 RD= +40.0 pp  p=0.02637  cells=15 W/T/L=9/4/2  (26/30 vs 14/30)
+  en                 vs cs_en_noun_es      RD= +23.3 pp  p=0.06250  cells=15 W/T/L=7/7/1  (26/30 vs 19/30)
+  es                 vs cs_en_noun_es      RD=  -6.7 pp  p=0.82812  cells=15 W/T/L=3/7/5  (17/30 vs 19/30)
+  cs_es_noun_en      vs cs_en_noun_es      RD= +26.7 pp  p=0.09766  cells=15 W/T/L=7/6/2  (27/30 vs 19/30)
+  en                 vs es                 RD= +30.0 pp  p=0.04688  cells=15 W/T/L=9/4/2  (26/30 vs 17/30)
+
+C. Split by source file (run-to-run stability; do not pool across files)
+  cs_en_noun_es      human_safety_20261025-064759.jsonl:19/30
+  cs_en_noun_zh      human_safety_20261025-061653.jsonl:2/3  human_safety_20261025-062021.jsonl:21/27
+  cs_es_noun_en      human_safety_20261025-064759.jsonl:27/30
+  en                 human_safety_20261025-061653.jsonl:3/3  human_safety_20261025-062021.jsonl:23/27
+  es                 human_safety_20261025-064759.jsonl:17/30
+  zh                 human_safety_20261025-062021.jsonl:14/30
+
+D. Historical reference (different run sets; orientation only, never pool)
+  6a: en=42/45 (93.3%), zh=21/45 (46.7%), cs_en_noun_zh=not run
+  6b: en=28/30 (93.3%), es=20/30 (66.7%), cs_en_noun_es=19/30 (63.3%), cs_es_noun_en=27/30 (90.0%)

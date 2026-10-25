@@ -1,0 +1,35 @@
+new rows=180  hist 4b2 rows=180
+
+== 6a: soda, new batch only (states 0-4, k=2)
+  en               26/30 =  86.7%
+  zh               14/30 =  46.7%
+  cs_en_noun_zh    23/30 =  76.7%
+  en               vs cs_en_noun_zh    RD= +10.0 [-6.7,+26.7] p=0.50000 W/T/L=3/11/1 cells=15
+  zh               vs cs_en_noun_zh    RD= -30.0 [-53.3,-6.7] p=0.06250 W/T/L=2/5/8 cells=15
+  en               vs zh               RD= +40.0 [+13.3,+66.7] p=0.02637 W/T/L=9/4/2 cells=15
+
+== 6b: soda Spanish, new batch only
+  en               26/30 =  86.7%
+  es               17/30 =  56.7%
+  cs_en_noun_es    19/30 =  63.3%
+  cs_es_noun_en    27/30 =  90.0%
+  en               vs cs_en_noun_es    RD= +23.3 [+6.7,+40.0] p=0.06250 W/T/L=7/7/1 cells=15
+  es               vs cs_en_noun_es    RD=  -6.7 [-36.7,+23.3] p=0.82812 W/T/L=3/7/5 cells=15
+  cs_es_noun_en    vs cs_en_noun_es    RD= +26.7 [+3.3,+50.0] p=0.09766 W/T/L=7/6/2 cells=15
+  en               vs es               RD= +30.0 [+6.7,+50.0] p=0.04688 W/T/L=9/4/2 cells=15
+
+== 6b: pooled (new + 4b2), cell means over 4 runs
+  en               54/60 =  90.0%
+  es               37/60 =  61.7%
+  cs_en_noun_es    38/60 =  63.3%
+  cs_es_noun_en    54/60 =  90.0%
+  en               vs cs_en_noun_es    RD= +26.7 [+13.3,+40.0] p=0.00391 W/T/L=11/3/1 cells=15
+  es               vs cs_en_noun_es    RD=  -1.7 [-16.7,+15.0] p=1.00000 W/T/L=4/5/6 cells=15
+  cs_es_noun_en    vs cs_en_noun_es    RD= +26.7 [+8.3,+43.3] p=0.01929 W/T/L=11/2/2 cells=15
+  en               vs es               RD= +28.3 [+16.7,+40.0] p=0.00220 W/T/L=12/2/1 cells=15
+
+== 6b: per batch, same contrast
+  [new] en               vs cs_en_noun_es    RD= +23.3 p=0.06250 W/T/L=7/7/1
+  [new] cs_es_noun_en    vs cs_en_noun_es    RD= +26.7 p=0.09766 W/T/L=7/6/2
+  [4b2] en               vs cs_en_noun_es    RD= +30.0 p=0.03320 W/T/L=10/3/2
+  [4b2] cs_es_noun_en    vs cs_en_noun_es    RD= +26.7 p=0.03516 W/T/L=8/6/1
