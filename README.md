@@ -6,6 +6,8 @@ Data, instruction sets, episode logs and analysis code for the paper
 > Jiacun Sang and Wen Liu
 > IEEE AIHCIR 2026, Session 10 — Safety Evaluation and Assurance for Embodied Intelligence
 
+Repository: <https://github.com/sangbu01/supplementary>
+
 ---
 
 ## What this repository contains
@@ -105,6 +107,9 @@ Python 3.8+ with `numpy`, `scipy`, `pandas`, `statsmodels` and `matplotlib` for 
 ### Commands
 
 ```bash
+git clone https://github.com/sangbu01/supplementary.git
+cd supplementary
+
 # Table II from an explicitly fixed run set (Round A + two Round B batches)
 python analysis/recompute_table2_fixed_runs.py
 
@@ -142,11 +147,10 @@ Details are in `second_model_gate_failure.md`.
 
 ## Licence and citation
 
-No licence has been finalised yet. The authors intend to release the **code
-under the MIT Licence** and the **data and instruction strings under CC BY
-4.0**; the corresponding `LICENSE` files will be added before public release.
-The LIBERO-Safety benchmark, its assets and the π0.5 checkpoint remain under
-their original licences.
+The authors intend to release the **code under the MIT Licence** and the
+**data and instruction strings under CC BY 4.0**; the corresponding `LICENSE`
+files will be added in a follow-up commit. The LIBERO-Safety benchmark, its
+assets and the π0.5 checkpoint remain under their original licences.
 
 ```bibtex
 @inproceedings{sang2026frameeffects,
